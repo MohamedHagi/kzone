@@ -1,0 +1,38 @@
+
+.title{
+text-align: center;
+position: relative;
+margin-top: 100px;
+
+
+
+}
+
+ .category {
+
+  font-size:2.25rem;
+  letter-spacing:0;
+  line-height:2.5rem;
+  line-height:1.25;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+@media (min-width:768px){
+  .category{line-height:1.5;}
+  }
+
+
+.font-sans{
+
+    font-family: hero-new,Tahoma,Geneva,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    
+  }
+
+  .font-large{
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }

@@ -1,0 +1,237 @@
+
+.home-container{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  justify-content: center;
+
+}
+.home-container>* {
+  flex: 0 0 30%;
+}
+
+
+
+.header-container{
+
+  align-items: start;
+  margin-bottom: 100px;
+
+
+}
+
+
+.header-item{
+
+  width: 100%; 
+ position: relative;
+
+  
+}
+
+
+.header-item img{
+position: relative;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+
+
+}
+
+
+
+.header-item .content-box{
+  position: absolute;
+bottom: 7%;
+max-height: 65%;
+max-width: 25%;
+padding: 0 1.4em 1.2em;
+line-height: 24px;
+background-color: #fff;
+display: block;
+overflow: hidden;
+padding: 0 1.5em 1.3em;
+z-index: 1000;
+left: 5%;
+margin-top: -20px;
+}
+
+.context-box .label{
+
+
+  font-size: 11px;
+letter-spacing: 1.5px;
+padding-left: 11%;
+margin: 0 -11% 1.5em;
+background-color: #03fc96;
+font-family: Helvetica,Arial,sans-serif;
+text-transform: uppercase;
+font-weight: 900;
+padding: 3% 3% 3% 16%;
+
+}
+
+.context-box .label h3{
+  display: block;
+font-size: 1.17em;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-size: 24px;
+}
+
+
+.context-box .article-title h3{
+  font-size: 50px;
+
+  font-family: Helvetica,Arial,sans-serif;
+color: #000;
+text-transform: uppercase;
+display: block;
+font-size: 45px;
+line-height: 100%;
+font-weight: 700;
+margin: 0;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 743px) {
+    .home-container {
+          
+        display:block;
+  
+      }
+    }
+
+
+    @media only screen and (max-width: 743px) {
+      .header-item img {
+            
+        position: relative;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    
+        }
+      }
+
+
+
+
+      .widget {
+        margin-bottom: 66px; }
+        .widget .widget-title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.5;
+          color: #020202;
+          margin-bottom: 25px; }
+
+
+          #colorlib-hero {
+            height: 650px;
+            clear: both;
+            width: 100%;
+            float: left; }
+            #colorlib-hero .btn {
+              font-size: 24px; }
+              #colorlib-hero .btn.btn-primary {
+                padding: 14px 30px !important; }
+            #colorlib-hero .flexslider {
+              border: none;
+              z-index: 1;
+              margin-bottom: 0; }
+              #colorlib-hero .flexslider .slides {
+                position: relative;
+                overflow: hidden; }
+                #colorlib-hero .flexslider .slides li {
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center center;
+                  min-height: 650px;
+                  position: relative; }
+                  #colorlib-hero .flexslider .slides li .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.1); }
+              #colorlib-hero .flexslider .flex-control-nav {
+                display: none; }
+              #colorlib-hero .flexslider .flex-direction-nav a:before {
+                font-family: 'icomoon';
+                content: '\e0c2';
+                color: white;
+                text-shadow: none !important; }
+              #colorlib-hero .flexslider .flex-direction-nav a.flex-next:before {
+                content: '\e0c3'; }
+              #colorlib-hero .flexslider .flex-direction-nav a {
+                margin: 0;
+                height: 70px; }
+              #colorlib-hero .flexslider .slider-text {
+                max-width: 100%;
+                display: table;
+                opacity: 1;
+                height: 650px;
+                z-index: 9; }
+                @media screen and (max-width: 768px) {
+                  #colorlib-hero .flexslider .slider-text {
+                    width: 100%; } }
+                #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+                  display: table-cell;
+                  vertical-align: middle;
+                  height: 650px;
+                  position: relative; }
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner span i {
+                    font-size: 24px;
+                    color: #F7AF1D; }
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+                    margin: 0;
+                    padding: 0;
+                    color: black; }
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+                    margin-bottom: 20px;
+                    font-size: 28px;
+                    line-height: 1.3;
+                    position: relative;
+                    font-weight: 700; }
+                    @media screen and (max-width: 768px) {
+                      #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+                        font-size: 16px; } }
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner .meta {
+                    text-transform: uppercase;
+                    font-size: 14px; }
+                    #colorlib-hero .flexslider .slider-text > .slider-text-inner .meta span {
+                      padding-right: 10px; }
+                      #colorlib-hero .flexslider .slider-text > .slider-text-inner .meta span a {
+                        color: #000;
+                        font-weight: 700; }
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner .desc {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: block;
+                    padding: 0em;
+                    background: white;
+                    width: 80%;
+                    padding: 2em; }
+                    @media screen and (max-width: 768px) {
+                      #colorlib-hero .flexslider .slider-text > .slider-text-inner .desc {
+                        width: 100%; } }
+      
+      
+      
+        

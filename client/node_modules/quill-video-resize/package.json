@@ -1,0 +1,42 @@
+{
+	"name": "quill-video-resize",
+	"version": "1.0.0",
+	"description": "A module for Quill rich text editor to allow videos to be resized.",
+	"main": "src/VideoResize.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack --progress --colors --watch",
+		"build": "webpack -p --progress --colors"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pblobp/quill-video-resize-module"
+	},
+	"keywords": [
+		"quill",
+		"quilljs",
+		"video",
+		"resize",
+		"sizer"
+	],
+	"author": "@pblobp",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/pblobp/quill-video-resize-module/issues"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.7.5",
+		"@babel/core": "^7.7.5",
+		"@babel/preset-env": "^7.7.6",
+		"babel-eslint": "^10.0.3",
+		"babel-loader": "^8.0.6",
+		"eslint": "^6.7.2",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	},
+	"dependencies": {
+		"lodash": "^4.17.15",
+		"quill": "^1.3.7",
+		"raw-loader": "^4.0.0"
+	}
+}
