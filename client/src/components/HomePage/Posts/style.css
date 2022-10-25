@@ -1,8 +1,7 @@
 .band {
   display: -ms-grid;
   display: grid;
-  top: 150px;
-  margin-bottom: 50px;
+  margin: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -24,9 +23,5 @@
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
-}
-
-hr {
-  border-top: 1px solid white;
 }
 /*# sourceMappingURL=style.css.map */
