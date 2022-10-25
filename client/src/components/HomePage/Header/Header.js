@@ -1,5 +1,5 @@
 import React from 'react'
-import '../mashable.css';
+import '../homepage.css';
 import { CircularProgress } from '@material-ui/core';
 
 /**

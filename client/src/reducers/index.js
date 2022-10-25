@@ -6,10 +6,10 @@ import posts from './posts';
 import auth from './auth';
 
 const persistConfig = {
-    key:'root',
+    key: 'root',
     storage,
     whitelist: ['posts', 'auth']
 };
-const rootReducer = combineReducers({posts, auth });
+const rootReducer = combineReducers({ posts, auth });
 
 export default persistReducer(persistConfig, rootReducer)

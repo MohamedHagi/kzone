@@ -2,15 +2,15 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export default function
-GoToTop(){
+    GoToTop() {
 
-const { pathname } = useLocation();
+    const { pathname } = useLocation();
 
-useEffect(()=> {
+    useEffect(() => {
 
-    window.scrollTo(0,0);
+        window.scrollTo(0, 0);
 
-}, [pathname]);
+    }, [pathname]);
 
-return null;
+    return null;
 }
