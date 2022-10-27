@@ -15,11 +15,11 @@ Link: https://kzone-test.herokuapp.com
 
 Homepage (Desktop View):
 
-![ScreenShot 1](https://raw.githubusercontent.com/MohamedHagi/kzone/master/images/kzone1.png)
+![ScreenShot 1](https://raw.githubusercontent.com/MohamedHagi/kzone/master/images/rsz_kzone1.png)
 
 Homepage (Mobile View):
 
-![ScreenShot 1](https://raw.githubusercontent.com/MohamedHagi/kzone/master/images/kzone6.png)
+![ScreenShot 1](https://raw.githubusercontent.com/MohamedHagi/kzone/master/images/rsz_kzone6.png)
 
 ## Run Locally
 
