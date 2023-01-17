@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 
-const API = axios.create({ baseURL: "http://localhost:5000" });
+const API = axios.create({ baseURL: "https://web-production-4430.up.railway.app" });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
