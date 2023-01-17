@@ -4,7 +4,7 @@ K-ZONE is a News Blog Website
 
 ## Demo Link
 
-Link: https://kzone-test.herokuapp.com
+Link: https://kzone.netlify.app
 
 
 
