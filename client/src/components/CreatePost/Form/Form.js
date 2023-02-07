@@ -82,9 +82,7 @@ function to handle submit
           variant="outlined"
           label="Creator"
           value={postData.description}
-          onChange={(e) =>
-            setPostData({ ...postData, description: e.target.value })
-          }
+          onChange={(e) => setPostData({ ...postData, description: e.target.value })}
         />
         <Select options={selectOptions} onChange={handleChange} />
         <p style={{ float: "left", paddingTop: "5px", paddingRight: "5px" }}>
@@ -98,18 +96,14 @@ function to handle submit
           variant="outlined"
           label="Creator"
           value={postData.selectedFile}
-          onChange={(e) =>
-            setPostData({ ...postData, selectedFile: e.target.value })
-          }
+          onChange={(e) => setPostData({ ...postData, selectedFile: e.target.value })}
         />
         <ReactQuill
           theme="snow"
           modules={modules}
           formats={formats}
           value={postData.message}
-          onChange={(defaultValue) =>
-            setPostData({ ...postData, message: defaultValue })
-          }
+          onChange={(defaultValue) => setPostData({ ...postData, message: defaultValue })}
         />
         <button type="submit">Submit</button>
       </form>

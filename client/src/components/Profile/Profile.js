@@ -1,22 +1,13 @@
-import React from 'react'
-import {Paper} from '@material-ui/core';
+import React from "react";
+import { Paper } from "@material-ui/core";
 
 /**
-* @author
-* @function Profile
-**/
+ * @author
+ * @function Profile
+ **/
 
 const Profile = (props) => {
-  return(
-    <div style={{position:"relative", top: "100px"}}>
+  return <div style={{ position: "relative", top: "100px" }}></div>;
+};
 
-
-
-
-
-    </div>
-   )
-
- }
-
-export default Profile
+export default Profile;

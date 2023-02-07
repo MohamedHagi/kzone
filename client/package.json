@@ -34,7 +34,6 @@
     "jwt-decode": "^3.1.2",
     "lint": "^0.7.0",
     "moment": "^2.29.1",
-    "node-sass": "^7.0.3",
     "quill-image-resize-module-react": "^3.0.0",
     "quill-image-uploader": "^1.2.2",
     "quill-video-resize": "^1.0.0",
@@ -58,6 +57,7 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
+    "sass": "^1.57.1",
     "suneditor-react": "^3.3.0",
     "tinymce": "^5.8.2"
   },

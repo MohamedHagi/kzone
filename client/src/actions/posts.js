@@ -1,7 +1,16 @@
-import { FETCH_POST, FETCH_ALL, FETCH_BY_SEARCH, CREATE, UPDATE, DELETE, LIKE, START_LOADING, END_LOADING } from '../constants/actionTypes';
+import {
+  FETCH_POST,
+  FETCH_ALL,
+  FETCH_BY_SEARCH,
+  CREATE,
+  UPDATE,
+  DELETE,
+  LIKE,
+  START_LOADING,
+  END_LOADING,
+} from "../constants/actionTypes";
 
-import * as api from '../api/index.js';
-
+import * as api from "../api/index.js";
 
 export const getPost = (id) => async (dispatch) => {
   try {
@@ -30,7 +39,9 @@ export const getPosts = () => async (dispatch) => {
 export const getPostsBySearch = (searchQuery) => async (dispatch) => {
   try {
     dispatch({ type: START_LOADING });
-    const { data: { data } } = await api.fetchPostsBySearch(searchQuery);
+    const {
+      data: { data },
+    } = await api.fetchPostsBySearch(searchQuery);
 
     dispatch({ type: FETCH_BY_SEARCH, payload: data });
     dispatch({ type: END_LOADING });
@@ -51,8 +62,6 @@ export const createPost = (post) => async (dispatch) => {
   }
 };
 
-
-
 export const updatePost = (id, post) => async (dispatch) => {
   try {
     const { data } = await api.updatePost(id, post);
@@ -64,7 +73,7 @@ export const updatePost = (id, post) => async (dispatch) => {
 };
 
 export const likePost = (id) => async (dispatch) => {
-  const user = JSON.parse(localStorage.getItem('profile'));
+  const user = JSON.parse(localStorage.getItem("profile"));
   try {
     const { data } = await api.likePost(id, user?.token);
 

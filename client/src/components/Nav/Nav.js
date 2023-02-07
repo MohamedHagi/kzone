@@ -69,10 +69,7 @@ const Nav = (props) => {
                   <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav mr-auto py-4 py-md-0">
                     <li className="list-unstyled k-nav pl-md-0 ml-0 ml-md-4 ">
                       <a href="/category/life" className="k-nav">
@@ -121,9 +118,7 @@ const Nav = (props) => {
                           aria-haspopup="true"
                           aria-expanded="false"
                         >
-                          <Avatar className="k-nav">
-                            {user?.result?.name.charAt(0)}
-                          </Avatar>
+                          <Avatar className="k-nav">{user?.result?.name.charAt(0)}</Avatar>
                         </a>
                         <div className="dropdown-menu dropdown-menu-left">
                           <button className="dropdown-item" onClick={logout}>
@@ -132,12 +127,12 @@ const Nav = (props) => {
                         </div>
                       </li>
                     ) : (
-                        <li className="list-unstyled k-nav pl-md-0 ml-0 ml-md-4">
-                          <a href="/login" className="k-nav">
-                            <Avatar className="k-nav pl-md-0 ml-0 ml-md-4" />
-                          </a>{" "}
-                        </li>
-                      )}
+                      <li className="list-unstyled k-nav pl-md-0 ml-0 ml-md-4">
+                        <a href="/login" className="k-nav">
+                          <Avatar className="k-nav pl-md-0 ml-0 ml-md-4" />
+                        </a>{" "}
+                      </li>
+                    )}
 
                     <div className="k-nav pl-md-0 ml-0 ml-md-4">
                       <input

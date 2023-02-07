@@ -1,5 +1,5 @@
-import { AUTH } from '../constants/actionTypes';
-import * as api from '../api/index.js';
+import { AUTH } from "../constants/actionTypes";
+import * as api from "../api/index.js";
 
 export const signin = (formData, router) => async (dispatch) => {
   try {
@@ -7,9 +7,9 @@ export const signin = (formData, router) => async (dispatch) => {
 
     dispatch({ type: AUTH, data });
 
-    router.push('/');
+    router.push("/");
   } catch (error) {
-    console.log("No account linked to dat styll");
+    console.log("No Account Linked");
   }
 };
 
@@ -19,7 +19,7 @@ export const signup = (formData, router) => async (dispatch) => {
 
     dispatch({ type: AUTH, data });
 
-    router.push('/');
+    router.push("/");
   } catch (error) {
     console.log(error);
   }
