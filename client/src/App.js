@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav.js";
 import Home from "./components/HomePage/Home.js";
 import PostDetails from "./components/PostDetails/PostDetails.js";
@@ -40,19 +40,18 @@ const App = () => {
         <MyComponent wrapperBackgroundColor="rgb(87, 8, 97)" customLoader={<Loader />} />
       ) : (
         <>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/blogpost/:_id" component={PostDetails}></Route>
-            {user?.result.email === "mohamed.hagi9@gmail.com" && (
-              <Route exact path="/createpost" component={CreatePost}></Route>
-            )}
-            <Route exact path="/login" component={LoginPage}></Route>
-            <Route exact path="/addblog/success" component={CreatePostSuccess}></Route>
-            <Route exact path="/profile/:_id" component={Profile}></Route>
-            <Route exact path="/category/:category" component={CategoryPage}></Route>
-            <Route path="/searchResults/:searchQuery" exact component={SearchResult} />
-            <Route path="*" exact={true} component={PageNotFound} />
-          </Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/blogpost/:_id" component={PostDetails}></Route>
+          {user?.result.email === "mohamed.hagi9@gmail.com" && (
+            <Route exact path="/createpost" component={CreatePost}></Route>
+          )}
+          <Route exact path="/login" component={LoginPage}></Route>
+          <Route exact path="/addblog/success" component={CreatePostSuccess}></Route>
+          <Route exact path="/profile/:_id" component={Profile}></Route>
+          <Route exact path="/category/:category" component={CategoryPage}></Route>
+          <Route path="/searchResults/:searchQuery" exact component={SearchResult} />
+          <Route path="*" exact={true} component={PageNotFound} />
+
           <Footer />
         </>
       )}

@@ -4,25 +4,25 @@
   top: 150px;
   margin-bottom: 50px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-gap: 20px;
   padding: 1em 0;
 }
 
 @media (min-width: 30em) {
   .band {
-    -ms-grid-columns: (1fr) [1fr];
-    grid-template-columns: repeat(1fr 1fr);
+    -ms-grid-columns: (1fr)[1fr];
+        grid-template-columns: repeat(1fr 1fr);
   }
 }
 
 @media (min-width: 60em) {
   .band {
-    -ms-grid-columns: (1fr) [4];
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 
