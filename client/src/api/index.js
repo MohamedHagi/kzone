@@ -2,7 +2,7 @@ import axios from "axios";
 
 //https://web-production-4430.up.railway.app
 
-const API = axios.create({ baseURL: "https://kzone-server.onrender.com/" });
+const API = axios.create({ baseURL: "http://localhost:3001/" });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {

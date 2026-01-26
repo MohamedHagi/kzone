@@ -15,7 +15,7 @@ const CategorySection = ({ match, category }) => {
   const dispatch = useDispatch();
 
   const post = useSelector((state) =>
-    state.posts.posts.filter((post) => post.category === category)
+    state.posts.posts.filter((post) => post.category === category),
   );
 
   const latestOrder = post.slice().reverse();
@@ -31,19 +31,23 @@ const CategorySection = ({ match, category }) => {
             <img src={latestOrder[0].selectedFile} alt="related post" className="post-img" />
           </Link>
         </div>
-      ) : (
+      ) : latestOrder.length === 1 ? (
         <div className="cover-category">
-          <Link to={`/blogpost/${latestOrder._id}`}>
-            <img src={latestOrder.selectedFile} alt="related post" className="post-img" />
+          <Link to={`/blogpost/${latestOrder[0]._id}`}>
+            <img src={latestOrder[0].selectedFile} alt="related post" className="post-img" />
           </Link>
         </div>
-      )}
+      ) : null}
 
       {latestOrder.map((post) => {
         return (
           <div key={post._id}>
-            <Link to={`/category/${post.category}`} className="category-post" key={post._id}>
-              {post.category.toUpperCase()}
+            <Link
+              to={`/category/${post.category || "uncategorized"}`}
+              className="category-post"
+              key={post._id}
+            >
+              {post.category ? post.category.toUpperCase() : "UNCATEGORIZED"}
             </Link>
             <Link to={`/blogpost/${post._id}`} className="category-post-title">
               <h5 className="category-post-title">{post.title}</h5>

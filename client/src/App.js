@@ -50,7 +50,6 @@ const App = () => {
           <Route exact path="/profile/:_id" component={Profile}></Route>
           <Route exact path="/category/:category" component={CategoryPage}></Route>
           <Route path="/searchResults/:searchQuery" exact component={SearchResult} />
-          <Route path="*" exact={true} component={PageNotFound} />
 
           <Footer />
         </>

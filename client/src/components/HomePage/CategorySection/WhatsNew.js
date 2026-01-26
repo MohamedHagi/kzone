@@ -27,7 +27,7 @@ const WhatsNew = (props) => {
         return (
           <div key={id}>
             <Link to={`/category/${post.category}`} className="category-post">
-              {post.category.toUpperCase()}
+              {post.category ? post.category.toUpperCase() : "UNCATEGORIZED"}
             </Link>
             <Link to={`/blogpost/${id}`}>
               <h5 className="category-post-title">{post.title}</h5>

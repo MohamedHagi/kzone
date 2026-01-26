@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import FileBase from "react-file-base64";
 import { createPost } from "../../../actions/posts.js";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 import ReactQuill from "react-quill";
 import "./style.css";
 import { Paper, Typography } from "@material-ui/core";

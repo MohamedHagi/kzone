@@ -4,7 +4,7 @@ import { getPosts } from "../../actions/posts.js";
 import CategorySection from "./CategorySection/CategorySection";
 import WhatsNew from "./CategorySection/WhatsNew";
 import Header from "./Header/Header.js";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import "./homestyle.css";
 import "./homepage.css";
 
@@ -19,7 +19,7 @@ const Home = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if ((location.pathname = "/")) {
+    if (location.pathname === "/") {
       dispatch(getPosts());
       console.log("rendering!");
     }
