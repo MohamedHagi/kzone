@@ -51,7 +51,7 @@ function to handle submit
         ...postData,
         creator: user?.result?.name,
         category: category,
-      })
+      }),
     );
 
     history.push("/addblog/success");
