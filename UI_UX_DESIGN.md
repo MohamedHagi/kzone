@@ -34,13 +34,6 @@ K-ZONE is a content-focused news/blog web experience with category-driven discov
 - Homepage content density is good for exploration but benefits from clear section labels.
 - Mobile presentation maintains readability and hierarchy.
 
-## Recommended UX Improvements
-1. Add stronger active-state indicators for current category/location.
-2. Standardize spacing scales between cards and section headers for tighter rhythm.
-3. Improve empty states for search/category pages when no results are returned.
-4. Add clearer CTA priority on homepage hero/featured content.
-5. Ensure all imagery has descriptive alt text and consistent crop behavior.
-
 ## Screenshot Gallery
 
 ### Desktop Views
